@@ -762,7 +762,7 @@ section { position: relative; }
 }
 
 .exp-bullets li::before {
-  content: '—';
+  content: '•';
   color: var(--gold);
   flex-shrink: 0;
   font-weight: 300;
