@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lionel Ngawa — Safety & Reliability Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ═══════════════════ NAV ═══════════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">Lionel NGAWA KEMAJOU</a>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav.profile">Profil</a></li>
+    <li><a href="#experience" data-i18n="nav.experience">Expériences</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+    <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+    <li><a href="#education" data-i18n="nav.education">Formation</a></li>
+
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <div class="lang-toggle">
+    <button class="lang-btn active" data-lang="fr" onclick="setLang('fr')">FR</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+  </div>
+  <a href="mailto:ngawalionel99@gmail.com" class="nav-cta" data-i18n="nav.cta">Me Contacter</a>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section id="hero">
+
+  <div class="hero-left">
+    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Disponible · CDI · Septembre 2026</div>
+    <h1 class="hero-headline" data-i18n="hero.headline">
+      Ingénieur<br><em>Sûreté de Fonctionnement</em><br>Logicielle & Data Science
+    </h1>
+    <p class="hero-desc" data-i18n="hero.desc">
+      Je conçois la <strong>sûreté des systèmes critiques</strong> — embarqués, industriels, médicaux. 
+      Actuellement en alternance chez <strong>Valeo</strong>, formé en ingénierie des systèmes complexes et Data Science, 
+      je combine rigueur normative et intelligence des données pour des systèmes qui ne défaillent pas.
+    </p>
+    <div class="hero-btns">
+      <a href="mailto:ngawalionel99@gmail.com" class="btn-gold" data-i18n="hero.btn.contact">Me Contacter</a>
+      <a href="assets/CV_Lionel_NGAWA.pdf" class="btn-cv" download>
+        <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+        <span data-i18n="hero.btn.cv">Télécharger CV</span>
+      </a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/lnk99" target="_blank" class="hero-social-link" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/lionel-ngawa" target="_blank" class="hero-social-link" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:ngawalionel99@gmail.com" class="hero-social-link" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <span class="hero-social-sep">Paris, France</span>
+    </div>
+    <div class="hero-trusted">
+      <div class="hero-trusted-label" data-i18n="hero.trusted.label">Expérience chez</div>
+      <div class="hero-trusted-logos">
+        <div class="logo-badge"><img src="assets/logos/valeo.png" alt="Valeo"></div>
+        <div class="logo-badge"><img src="assets/logos/ge-healthcare.png" alt="GE Healthcare"></div>
+        <div class="logo-badge"><img src="assets/logos/robocath.png" alt="ROBOCATH"></div>
+        <div class="logo-badge logo-badge--light"><img src="assets/logos/jtekt.png" alt="JTEKT Torsen"></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span data-i18n="hero.scroll">Découvrir le profil</span>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-block">
+      <div class="avatar-frame">
+        <img src="assets/logos/lionel.jpg" alt="Lionel Ngawa Kemajou">
+      </div>
+    </div>
+
+    <div class="hero-stats-grid">
+      <div class="hero-stat-box">
+        <div class="stat-number">1<sup>+</sup></div>
+        <div class="stat-label" data-i18n="stat.years">Années d'expérience<br>en systèmes critiques</div>
+      </div>
+      <div class="hero-stat-box">
+        <div class="stat-number">4</div>
+        <div class="stat-label" data-i18n="stat.companies">Entreprises<br>internationales</div>
+      </div>
+      <div class="hero-stat-box">
+        <div class="stat-number">2</div>
+        <div class="stat-label" data-i18n="stat.degrees">Diplômes ingénieur<br>France + USA</div>
+      </div>
+      <div class="hero-stat-box">
+        <div class="stat-number">5<sup>+</sup></div>
+        <div class="stat-label" data-i18n="stat.sectors">Secteurs industriels<br>couverts</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ═══════════════════ MARQUEE ═══════════════════ -->
+<div class="marquee-band">
+  <div class="marquee-inner">
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.safety">Sûreté Fonctionnelle</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.risk">Analyse de Risques</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.reliability">Fiabilité Systèmes</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.embedded">Ingénierie Embarquée</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.ds">Data Science</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.ml">Machine Learning</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.sectors">Automobile · Ferroviaire · Médical</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.norms">Normes Industrielles</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.safety">Sûreté Fonctionnelle</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.risk">Analyse de Risques</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.reliability">Fiabilité Systèmes</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.embedded">Ingénierie Embarquée</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.ds">Data Science</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.ml">Machine Learning</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.sectors">Automobile · Ferroviaire · Médical</span></span>
+    <span class="marquee-item"><span class="marquee-dot"></span><span data-i18n="mq.norms">Normes Industrielles</span></span>
+  </div>
+</div>
+
+<!-- ═══════════════════ ABOUT ═══════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+
+      <div class="about-left">
+        <div class="section-label" data-i18n="about.label">Profil</div>
+        <h2 class="section-title" data-i18n="about.title">Un ingénieur<br><em>deux expertises</em></h2>
+
+        <div class="tshaped-visual" style="margin-top:2.5rem">
+          <div class="tshape-cell wide">
+            <div class="tshape-title" data-i18n="about.tshape.safety.title">Expertise Profonde — Sûreté & Fiabilité</div>
+            <div class="tshape-text" data-i18n="about.tshape.safety.text">Analyse des défaillances, gestion du risque, conformité normative sur systèmes critiques (automobile, médical, industriel)</div>
+          </div>
+          <div class="tshape-cell">
+            <div class="tshape-title" data-i18n="about.tshape.ds.title">Data Science</div>
+            <div class="tshape-text" data-i18n="about.tshape.ds.text">Machine Learning, Deep Learning, Bayésien, prédiction de défaillances</div>
+            <div class="pills" style="margin-top:0.8rem">
+              <span class="pill">Python</span>
+              <span class="pill">TensorFlow</span>
+              <span class="pill">MCMC</span>
+            </div>
+          </div>
+          <div class="tshape-cell">
+            <div class="tshape-title" data-i18n="about.tshape.se.title">Ingénierie Systèmes</div>
+            <div class="tshape-text" data-i18n="about.tshape.se.text">Embarqué, ADAS, dispositifs médicaux, robotique industrielle</div>
+            <div class="pills" style="margin-top:0.8rem">
+              <span class="pill">Rust</span>
+              <span class="pill">SCADE</span>
+              <span class="pill">Simulink</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pills" style="margin-top:2rem;gap:8px">
+          <span class="pill gold-pill">Automobile</span>
+          <span class="pill gold-pill">Ferroviaire</span>
+          <span class="pill gold-pill">Médical</span>
+          <span class="pill gold-pill">Défense & Aéro</span>
+          <span class="pill gold-pill">Industrie 4.0</span>
+        </div>
+      </div>
+
+      <div class="about-right" style="padding-top:2rem">
+        <p class="about-body" data-i18n="about.p1">
+          Je suis un ingénieur à l'intersection de deux mondes qui, ensemble, définissent l'ingénierie de demain : 
+          la <strong>sûreté de fonctionnement</strong> des systèmes complexes, et l'<strong>intelligence des données</strong>.
+        </p>
+
+        <div class="about-highlight" data-i18n="about.quote">
+          "Ce qui ne peut pas défaillir doit être compris, mesuré, et prouvé — c'est ce que je fais."
+        </div>
+
+        <p class="about-body" data-i18n="about.p2">
+          Alternant chez <strong>Valeo</strong>, je contribue quotidiennement à la sûreté des systèmes embarqués 
+          qui pilotent les véhicules autonomes de demain. Ma formation à <strong>Polytech Angers</strong> 
+          (ingénierie des systèmes complexes) complétée d'un <strong>Master Data Science aux États-Unis</strong> 
+          me donne un profil que peu d'ingénieurs possèdent : analyser la fiabilité <em>et</em> la modéliser 
+          intelligemment.
+        </p>
+
+        <p class="about-body" data-i18n="about.p3">
+          J'ai déjà œuvré dans <strong>l'automobile, le médical, la robotique chirurgicale et la qualité industrielle</strong>. 
+          Ce que je cherche en CDI : un environnement où la rigueur technique côtoie l'innovation — 
+          automobile, ferroviaire, défense, énergie ou tout système dont la défaillance n'est pas une option.
+        </p>
+
+        <div style="display:flex;gap:2rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)">
+          <div>
+            <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);margin-bottom:6px" data-i18n="about.contact.label">Contact</div>
+            <a href="mailto:ngawalionel99@gmail.com" style="font-size:14px;color:var(--dark);text-decoration:none">ngawalionel99@gmail.com</a>
+          </div>
+          <div>
+            <div style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-light);margin-bottom:6px" data-i18n="about.location.label">Localisation</div>
+            <span style="font-size:14px;color:var(--dark)" data-i18n="about.location.value">Paris, France entière</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label" data-i18n="exp.label">Expériences</div>
+    <h2 class="section-title" data-i18n="exp.title">Parcours<br><em>professionnel</em></h2>
+
+    <div class="exp-items">
+
+      <!-- VALEO -->
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-period">Sept. 2025 — Sept. 2026</div>
+          <div class="exp-company">Valeo</div>
+          <div class="exp-loc">Paris, France</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role-header">
+            <div class="exp-role-title" data-i18n="exp.valeo.role">Alternant Ingénieur — Innovation & Sûreté de Fonctionnement</div>
+            <div class="logo-badge">
+              <img src="assets/logos/valeo.png" alt="Valeo" class="company-logo">
+            </div>
+          </div>
+          <p class="exp-desc" data-i18n="exp.valeo.desc">
+            Au sein de la R&D Software Safety de Valeo, je travaille sur la sûreté des systèmes embarqués 
+            qui équiperont les véhicules ADAS de prochaine génération — systèmes d'aide à la conduite, 
+            surveillance du conducteur, plateforme Software Defined Vehicle.
+          </p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.valeo.b1">Analyse de sûreté logicielle (<strong>SW-SDA, FFI</strong>) sur un OS temps réel embarqué <strong>ASIL B</strong> (ISO 26262)</li>
+            <li data-i18n="exp.valeo.b2">Évaluation de la conformité <strong>ASIL B</strong> d’un module du middleware open source (<strong>Eclipse S-CORE</strong>)</li>
+            <li data-i18n="exp.valeo.b3">Exploration du <strong>langage Rust</strong> pour le développement embarqué sûr et performant</li>
+            <li data-i18n="exp.valeo.b4">Création d’un <strong>outil interne d’assurance Case</strong></li>
+            <li data-i18n="exp.valeo.b5">Rédaction de méthodologies <strong>Software Safety</strong> et de documentation technique R&amp;D</li>
+          </ul>
+          <div class="exp-chips">
+            <span class="exp-chip" data-i18n="exp.valeo.chip1">Sûreté Logicielle</span>
+            <span class="exp-chip" data-i18n="exp.valeo.chip2">Systèmes Embarqués</span>
+            <span class="exp-chip" data-i18n="exp.valeo.chip3">FMEA / DFA</span>
+            <span class="exp-chip" data-i18n="exp.valeo.chip4">Rust</span>
+            <span class="exp-chip" data-i18n="exp.valeo.chip5">ADAS</span>
+            <span class="exp-chip" data-i18n="exp.valeo.chip6">R&D</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GE HEALTHCARE -->
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-period">Mai — Août 2024</div>
+          <div class="exp-company">GE Healthcare</div>
+          <div class="exp-loc">Paris, France</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role-header">
+            <div class="exp-role-title" data-i18n="exp.ge.role">Ingénieur Fiabilité (Stage)</div>
+            <div class="logo-badge">
+              <img src="assets/logos/ge-healthcare.png" alt="GE Healthcare" class="company-logo">
+            </div>
+          </div>
+          <p class="exp-desc" data-i18n="exp.ge.desc">
+            Stage en R&D au sein de la division mammographie — l'un des environnements les plus exigeants 
+            en matière de fiabilité : les dispositifs médicaux ne tolèrent aucune défaillance sur des équipements 
+            de diagnostic critique.
+          </p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.ge.b1">Qualification et validation d'un <strong>dispositif électromécanique critique</strong> via un plan de fiabilité complet</li>
+            <li data-i18n="exp.ge.b2">Analyse de risque design et conception du protocole de tests d'intégration</li>
+            <li data-i18n="exp.ge.b3">Mesure et reporting des indicateurs de fiabilité logicielle sur environnement de test médical</li>
+          </ul>
+          <div class="exp-chips">
+            <span class="exp-chip" data-i18n="exp.ge.chip1">Dispositifs Médicaux</span>
+            <span class="exp-chip" data-i18n="exp.ge.chip2">Analyse de Risque</span>
+            <span class="exp-chip" data-i18n="exp.ge.chip3">Plan Fiabilité</span>
+            <span class="exp-chip" data-i18n="exp.ge.chip4">Tests Intégration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- JTEKT -->
+      <div class="exp-card reveal">
+        <div class="exp-meta">
+          <div class="exp-period">Mai — Août 2023</div>
+          <div class="exp-company">JTEKT Torsen</div>
+          <div class="exp-loc">La Louvière, Belgique</div>
+        </div>
+        <div class="exp-content">
+          <div class="exp-role-header">
+            <div class="exp-role-title" data-i18n="exp.jtekt.role">Ingénieur Qualité (Stage)</div>
+            <div class="logo-badge logo-badge--light">
+              <img src="assets/logos/jtekt.png" alt="JTEKT Torsen" class="company-logo">
+            </div>
+          </div>
+          <p class="exp-desc" data-i18n="exp.jtekt.desc">
+            Stage dans un environnement de production automobile internationale — résolution de problèmes 
+            complexes, collecte de données de qualité et contribution à la préparation d'un audit 
+            international de certification qualité.
+          </p>
+          <ul class="exp-bullets">
+            <li data-i18n="exp.jtekt.b1">Résolution de plaintes clients par analyse causale et plans d'actions correctives</li>
+            <li data-i18n="exp.jtekt.b2">Programmation de <strong>stations de mesures automatisées</strong> pour la collecte de données qualité (MeasurLink)</li>
+            <li data-i18n="exp.jtekt.b3">Contribution à la préparation de l'audit de certification <strong>IATF 16949</strong> (standard qualité automobile international)</li>
+          </ul>
+          <div class="exp-chips">
+            <span class="exp-chip" data-i18n="exp.jtekt.chip1">Qualité Automobile</span>
+            <span class="exp-chip" data-i18n="exp.jtekt.chip2">IATF 16949</span>
+            <span class="exp-chip" data-i18n="exp.jtekt.chip3">Résolution Problèmes</span>
+            <span class="exp-chip" data-i18n="exp.jtekt.chip4">Métrologie</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROJECTS ═══════════════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="proj.label">Projets</div>
+    <h2 class="section-title reveal" data-i18n="proj.title">Réalisations<br><em>clés</em></h2>
+
+    <div class="projects-layout">
+
+      <!-- UWF — S&P 500 Time Series Analysis -->
+      <div class="proj-card large reveal">
+        <div>
+          <div class="proj-card-header">
+            <span class="proj-card-num">01</span>
+            <div class="logo-badge">
+              <img src="assets/logos/uwf.png" alt="University of West Florida" class="proj-logo">
+            </div>
+          </div>
+          <div class="proj-client" data-i18n="proj.lstm.client">University of West Florida · 2024–2025</div>
+          <div class="proj-title" data-i18n="proj.lstm.title">Analyse de Séries Temporelles du S&amp;P 500</div>
+          <div class="proj-sub" data-i18n="proj.lstm.sub">Séries Temporelles · Finance · R</div>
+        </div>
+        <div>
+          <p class="proj-body" data-i18n="proj.lstm.body">
+            Modélisation des prix journaliers du <strong>S&amp;P 500 (2014–2020)</strong> avec des modèles <strong>ARIMA, ARMA, GARCH</strong> et un modèle hybride <strong>ARMA-GARCH</strong>. Tests de stationnarité (ADF), détection des effets ARCH, analyse <strong>ACF/PACF</strong> et sélection de modèles par <strong>AIC/BIC</strong>.
+          </p>
+          <div class="proj-result" data-i18n="proj.lstm.result">
+            Prévision de la volatilité et estimation du <strong>Value-at-Risk (VaR)</strong> adaptatif en période de crise (COVID-19)
+          </div>
+          <div class="proj-tags">
+            <span class="proj-tag" data-i18n="proj.lstm.tag1">ARIMA / GARCH</span>
+            <span class="proj-tag" data-i18n="proj.lstm.tag2">Séries Temporelles</span>
+            <span class="proj-tag" data-i18n="proj.lstm.tag3">Value-at-Risk</span>
+            <span class="proj-tag" data-i18n="proj.lstm.tag4">R</span>
+          </div>
+          <a class="proj-pdf-link" href="assets/pdf/sp500-time-series.pdf" target="_blank" rel="noopener" data-i18n="proj.pdf.view">Voir le rapport ↗</a>
+        </div>
+      </div>
+
+      <!-- UWF — Breast Cancer Clustering -->
+      <div class="proj-card reveal">
+        <div class="proj-card-header">
+          <span class="proj-card-num">02</span>
+          <div class="logo-badge">
+            <img src="assets/logos/uwf.png" alt="University of West Florida" class="proj-logo">
+          </div>
+        </div>
+        <div class="proj-client" data-i18n="proj.cancer.client">University of West Florida · Printemps 2025</div>
+        <div class="proj-title" data-i18n="proj.cancer.title">Diagnostic Cancer du Sein par Clustering Non-supervisé</div>
+        <div class="proj-sub" data-i18n="proj.cancer.sub">Machine Learning · Médical · Python</div>
+        <p class="proj-body" data-i18n="proj.cancer.body">
+          Analyse exploratoire du <strong>Wisconsin Breast Cancer Dataset</strong> par méthodes non-supervisées : K-Means, GMM, Clustering Spectral, DBSCAN et ACP. Identification de clusters tumoraux significatifs sans étiquettes prédéfinies, comparé aux approches supervisées (SVM).
+        </p>
+        <div class="proj-result" data-i18n="proj.cancer.result">
+          Clusters diagnostiques identifiés · Efficacité des méthodes non-supervisées démontrée en contexte médical
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag" data-i18n="proj.cancer.tag1">K-Means / GMM</span>
+          <span class="proj-tag" data-i18n="proj.cancer.tag2">ACP</span>
+          <span class="proj-tag" data-i18n="proj.cancer.tag3">Clustering</span>
+          <span class="proj-tag" data-i18n="proj.cancer.tag4">Python</span>
+        </div>
+        <a class="proj-pdf-link" href="assets/pdf/breast-cancer-clustering.pdf" target="_blank" rel="noopener" data-i18n="proj.pdf.view">Voir le rapport ↗</a>
+      </div>
+
+      <!-- UWF — CNN AlexNet -->
+      <div class="proj-card reveal reveal-delay-1">
+        <div class="proj-card-header">
+          <span class="proj-card-num">03</span>
+          <div class="logo-badge">
+            <img src="assets/logos/uwf.png" alt="University of West Florida" class="proj-logo">
+          </div>
+        </div>
+        <div class="proj-client" data-i18n="proj.cnn.client">University of West Florida · Automne 2024</div>
+        <div class="proj-title" data-i18n="proj.cnn.title">Classification d'Images par CNN (AlexNet)</div>
+        <div class="proj-sub" data-i18n="proj.cnn.sub">Vision par Ordinateur · Deep Learning · PyTorch</div>
+        <p class="proj-body" data-i18n="proj.cnn.body">
+          Fine-tuning d'un réseau <strong>AlexNet</strong> pour la classification multi-classes robuste d'images. Atteinte de <strong>+85 % de précision</strong> sur CIFAR-10 et datasets fleurs. Amélioration de la généralisation via dropout, optimiseur Adam, transfer learning et augmentation de données.
+        </p>
+        <div class="proj-result" data-i18n="proj.cnn.result">
+          +85&nbsp;% de précision sur CIFAR-10 · Généralisation améliorée par transfer learning et augmentation
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag" data-i18n="proj.cnn.tag1">CNN / AlexNet</span>
+          <span class="proj-tag" data-i18n="proj.cnn.tag2">PyTorch</span>
+          <span class="proj-tag" data-i18n="proj.cnn.tag3">Transfer Learning</span>
+          <span class="proj-tag" data-i18n="proj.cnn.tag4">CIFAR-10</span>
+        </div>
+        <a class="proj-pdf-link" href="assets/pdf/cnn-image-classification.pdf" target="_blank" rel="noopener" data-i18n="proj.pdf.view">Voir le rapport ↗</a>
+      </div>
+
+      <!-- Polytech Angers — Game of Robot -->
+      <div class="proj-card reveal">
+        <div class="proj-card-header">
+          <span class="proj-card-num">04</span>
+          <div class="logo-badge">
+            <img src="assets/logos/polytech-angers.png" alt="Polytech Angers" class="proj-logo">
+          </div>
+        </div>
+        <div class="proj-client" data-i18n="proj.robot.client">Polytech Angers · Projet Modélisation</div>
+        <div class="proj-title" data-i18n="proj.robot.title">Game of Robot — Conception Basée Modèle</div>
+        <div class="proj-sub" data-i18n="proj.robot.sub">Systèmes Embarqués · SCADE Suite · Machines à États</div>
+        <p class="proj-body" data-i18n="proj.robot.body">
+          Conception et implémentation de la logique de contrôle d'un robot via <strong>SCADE Suite</strong>. Modélisation du comportement système par <strong>machines à états</strong> et programmation synchrone. Simulation des réponses système et validation du comportement fonctionnel sur plusieurs scénarios.
+        </p>
+        <div class="proj-result" data-i18n="proj.robot.result">
+          Comportement fonctionnel validé · Logique de contrôle robuste modélisée et simulée
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag" data-i18n="proj.robot.tag1">SCADE Suite</span>
+          <span class="proj-tag" data-i18n="proj.robot.tag2">Machines à États</span>
+          <span class="proj-tag" data-i18n="proj.robot.tag3">Prog. Synchrone</span>
+          <span class="proj-tag" data-i18n="proj.robot.tag4">Systèmes Embarqués</span>
+        </div>
+      </div>
+
+      <!-- Polytech Angers — Steer-by-Wire Safety Study -->
+      <div class="proj-card reveal reveal-delay-1">
+        <div class="proj-card-header">
+          <span class="proj-card-num">05</span>
+          <div class="logo-badge">
+            <img src="assets/logos/polytech-angers.png" alt="Polytech Angers" class="proj-logo">
+          </div>
+        </div>
+        <div class="proj-client" data-i18n="proj.sbw.client">Polytech Angers · Projet Sûreté Fonctionnelle</div>
+        <div class="proj-title" data-i18n="proj.sbw.title">Étude de Sûreté Fonctionnelle — Steer-by-Wire</div>
+        <div class="proj-sub" data-i18n="proj.sbw.sub">Sûreté Fonctionnelle · Automobile · Analyse des Risques</div>
+        <p class="proj-body" data-i18n="proj.sbw.body">
+          Réalisation d'<strong>APR, AMDEC et AdD</strong> sur un système de direction Steer-by-Wire automobile. Identification des événements dangereux et évaluation des scénarios de défaillance. Élaboration d'un <strong>Safety Case</strong> démontrant la conformité aux principes de sûreté fonctionnelle.
+        </p>
+        <div class="proj-result" data-i18n="proj.sbw.result">
+          Safety Case complet élaboré · Conformité aux principes de sûreté fonctionnelle démontrée
+        </div>
+        <div class="proj-tags">
+          <span class="proj-tag" data-i18n="proj.sbw.tag1">APR</span>
+          <span class="proj-tag" data-i18n="proj.sbw.tag2">AMDEC / AdD</span>
+          <span class="proj-tag" data-i18n="proj.sbw.tag3">Safety Case</span>
+          <span class="proj-tag" data-i18n="proj.sbw.tag4">Sûreté Fonctionnelle</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ SKILLS ═══════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="skills.label">Compétences</div>
+    <h2 class="section-title reveal" data-i18n="skills.title">Stack<br><em>technique</em></h2>
+
+    <div class="skills-columns">
+
+      <div class="reveal">
+        <div class="skill-col-title" data-i18n="skills.col1.title">Sûreté & Fiabilité</div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.fmea">Analyse de risques (FMEA, APR, AdD)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.iso26262">Normes automobiles (ISO 26262)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.iec50126">Normes ferroviaires (IEC 50126)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.reliasoft">Reliasoft (XFMEA, Weibull++)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.reliability">Allocation de fiabilité</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.mbsa">MBSA / Méthodes formelles</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.iatf">Qualité (IATF 16949)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="skill-col-title" data-i18n="skills.col2.title">Data Science & IA</div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.python">Python</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.ml">Machine Learning (supervisé / non-sup.)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.dl">Deep Learning (TensorFlow, PyTorch)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.bayesian">Inférence Bayésienne & MCMC</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.ts">Séries Temporelles</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.rsql">R, SAS, SQL</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.stats">Analyse statistique (ANOVA, PCA)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="skill-col-title" data-i18n="skills.col3.title">Ingénierie Systèmes</div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.rust">Rust (embarqué sûr)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.matlab">Matlab / Simulink</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.scade">SCADE (méthodes formelles)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.solidworks">SolidWorks (CAO)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.ireb">Ingénierie des exigences (IREB)</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.agile">Méthodes Agiles</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+        <div class="skill-row"><span class="skill-name" data-i18n="skill.minitab">Minitab / Rcommander</span><div class="skill-dots"><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot active"></div><div class="skill-dot"></div></div></div>
+      </div>
+
+    </div>
+
+    <!-- Languages & Soft Skills -->
+    <div class="skills-extra reveal">
+      <div>
+        <div class="skills-extra-title" data-i18n="skills.lang.title">Langues</div>
+        <div class="lang-row">
+          <div class="lang-header">
+            <span class="lang-name" data-i18n="lang.fr">Français</span>
+            <span class="lang-level" data-i18n="lang.fr.level">Natif</span>
+          </div>
+          <div class="lang-bar-track"><div class="lang-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-header">
+            <span class="lang-name" data-i18n="lang.en">Anglais</span>
+            <span class="lang-level" data-i18n="lang.en.level">Professionnel · TOEIC 865/990</span>
+          </div>
+          <div class="lang-bar-track"><div class="lang-bar-fill" style="width:88%"></div></div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-header">
+            <span class="lang-name" data-i18n="lang.de">Allemand</span>
+            <span class="lang-level" data-i18n="lang.de.level">B1</span>
+          </div>
+          <div class="lang-bar-track"><div class="lang-bar-fill" style="width:30%"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="skills-extra-title" data-i18n="skills.soft.title">Savoir-être</div>
+        <div class="soft-tags">
+          <span class="soft-tag" data-i18n="soft.rigor">Rigueur & Précision</span>
+          <span class="soft-tag" data-i18n="soft.critical">Analyse Critique</span>
+          <span class="soft-tag" data-i18n="soft.comms">Communication Technique</span>
+          <span class="soft-tag" data-i18n="soft.pm">Gestion de Projet</span>
+          <span class="soft-tag" data-i18n="soft.adapt">Adaptabilité</span>
+          <span class="soft-tag" data-i18n="soft.team">Travail en Équipe</span>
+          <span class="soft-tag" data-i18n="soft.proactive">Proactivité</span>
+          <span class="soft-tag" data-i18n="soft.pedagogy">Pédagogie</span>
+          <span class="soft-tag" data-i18n="soft.intl">Profil International</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════ EDUCATION ═══════════════════ -->
+<section id="education">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="edu.label">Formation</div>
+    <h2 class="section-title reveal" data-i18n="edu.title">Parcours<br><em>académique</em></h2>
+
+    <div class="edu-grid">
+
+      <div class="edu-card reveal">
+        <!-- Logo: place polytech-angers.png in assets/logos/ -->
+        <div class="logo-badge">
+          <img src="assets/logos/polytech-angers.png" alt="Polytech Angers" class="edu-logo">
+        </div>
+        <div class="edu-year">2026</div>
+        <div class="edu-degree" data-i18n="edu.polytech.degree">Diplôme d'Ingénieur — Qualité, Innovation & Fiabilité</div>
+        <div class="edu-school" data-i18n="edu.polytech.school">Polytech Angers · France</div>
+        <p class="edu-desc" data-i18n="edu.polytech.desc">Spécialisation en ingénierie des systèmes complexes, RAMS (Reliability, Availability, Maintainability, Safety), analyse des défaillances et gestion des risques industriels.</p>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-1">
+        <!-- Logo: place uwf.png in assets/logos/ -->
+        <div class="logo-badge">
+          <img src="assets/logos/uwf.png" alt="University of West Florida" class="edu-logo">
+        </div>
+        <div class="edu-year">2025</div>
+        <div class="edu-degree" data-i18n="edu.uwf.degree">Master of Science — Data Science</div>
+        <div class="edu-school" data-i18n="edu.uwf.school">University of West Florida · USA</div>
+        <p class="edu-desc" data-i18n="edu.uwf.desc">Formation au niveau master aux États-Unis. Machine Learning, Deep Learning, inférence bayésienne & MCMC, modélisation des séries temporelles. Diplôme reconnu internationalement.</p>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-2">
+        <!-- Logo: place iut-dschang.png in assets/logos/ -->
+        <div class="logo-badge">
+          <img src="assets/logos/iut-dschang.png" alt="IUT Dschang" class="edu-logo">
+        </div>
+        <div class="edu-year">2021</div>
+        <div class="edu-degree" data-i18n="edu.iut.degree">Licence — Génie Mécanique & Productique</div>
+        <div class="edu-school" data-i18n="edu.iut.school">IUT · Dschang, Cameroun</div>
+        <p class="edu-desc" data-i18n="edu.iut.desc">Fondations en conception mécanique, fabrication et procédés industriels, résistance des matériaux, gestion de production.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ CONTACT ═══════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label reveal" data-i18n="contact.label">Contact</div>
+    <h2 class="section-title reveal" data-i18n="contact.title">Travaillons<br><em>ensemble</em></h2>
+
+    <div class="contact-layout">
+
+      <div class="contact-left reveal">
+        <p class="contact-intro" data-i18n="contact.intro">
+          Disponible pour un <strong>CDI à partir de septembre 2026</strong>.
+          Je suis ouvert aux opportunités dans l'automobile, le ferroviaire, la défense et le médical
+          — tout environnement où la <strong>sûreté n'est pas négociable</strong>.
+        </p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label" data-i18n="contact.item.email">Email</div>
+              <a href="mailto:ngawalionel99@gmail.com" class="contact-item-value">ngawalionel99@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label" data-i18n="contact.item.phone">Téléphone</div>
+              <a href="tel:+33743675867" class="contact-item-value">+33 7 43 67 58 67</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label" data-i18n="contact.item.linkedin">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/lionel-ngawa" target="_blank" class="contact-item-value">linkedin.com/in/lionel-ngawa</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label" data-i18n="contact.item.location">Localisation</div>
+              <span class="contact-item-value" data-i18n="contact.location.value">Paris — mobilité France entière</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right reveal reveal-delay-1">
+        <div class="contact-form-title" data-i18n="contact.form.title">Envoyer un message</div>
+        <form onsubmit="sendContact(event)">
+          <div class="form-group">
+            <label class="form-label" data-i18n="form.name">Nom</label>
+            <input type="text" class="form-input" id="contact-name" data-i18n-ph="form.name.ph" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="form.email">Email</label>
+            <input type="email" class="form-input" id="contact-email" data-i18n-ph="form.email.ph" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" data-i18n="form.message">Message</label>
+            <textarea class="form-textarea" id="contact-message" data-i18n-ph="form.message.ph" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn-send" data-i18n="form.submit">Envoyer le message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ FOOTER ═══════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-name">Lionel NGAWA KEMAJOU</div>
+      <div class="footer-socials">
+        <a href="https://github.com/lnk99" target="_blank" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/lionel-ngawa" target="_blank" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:ngawalionel99@gmail.com" title="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy" data-i18n="footer.copy">© 2026 · Ingénieur Safety & Reliability</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
