@@ -211,6 +211,12 @@ const translations = {
     'proj.sbw.body':"Réalisation d'<strong>APR, AMDEC et AdD</strong> sur un système de direction Steer-by-Wire automobile. Identification des événements dangereux et évaluation des scénarios de défaillance. Élaboration d'un <strong>Safety Case</strong> démontrant la conformité aux principes de sûreté fonctionnelle.",
     'proj.sbw.result':'Safety Case complet élaboré · Conformité aux principes de sûreté fonctionnelle démontrée',
     'proj.sbw.tag1':'APR','proj.sbw.tag2':'AMDEC / AdD','proj.sbw.tag3':'Safety Case','proj.sbw.tag4':'Sûreté Fonctionnelle',
+    'proj.cyber.client':'University of West Florida · Été 2025',
+    'proj.cyber.title':'Détection d\'Anomalies dans les Logs de Cybersécurité par LSTM',
+    'proj.cyber.sub':'Deep Learning · Cybersécurité · Python',
+    'proj.cyber.body':'Conception et implémentation d\'une solution de <strong>Deep Learning basée sur des réseaux LSTM</strong> pour détecter les événements anormaux dans des logs d\'infrastructure télécom réels. Pipeline de prétraitement robuste : parsing des logs système, encodage des variables catégorielles, fenêtrage temporel et normalisation de séries temporelles multivariées. Construction d\'un <strong>autoencodeur LSTM non-supervisé</strong> pour modéliser le comportement normal et détecter les déviations via l\'erreur de reconstruction.',
+    'proj.cyber.result':'Haute précision de détection par optimisation des seuils (precision-recall) · Validation par ROC-AUC et F1-score',
+    'proj.cyber.tag1':'LSTM Autoencoder','proj.cyber.tag2':'Anomaly Detection','proj.cyber.tag3':'Cybersécurité','proj.cyber.tag4':'Python',
     'proj.pdf.view':'Voir le rapport ↗'
   },
   en: {
@@ -330,6 +336,12 @@ const translations = {
     'proj.sbw.body':'Performed <strong>PHA, FMEA and FTA</strong> on a Steer-by-Wire automotive steering system. Identified hazardous events and evaluated system failure scenarios. Built a <strong>Safety Case</strong> demonstrating compliance with functional safety principles.',
     'proj.sbw.result':'Complete Safety Case developed · Compliance with functional safety principles demonstrated',
     'proj.sbw.tag1':'PHA / APR','proj.sbw.tag2':'FMEA / FTA','proj.sbw.tag3':'Safety Case','proj.sbw.tag4':'Functional Safety',
+    'proj.cyber.client':'University of West Florida · Summer 2025',
+    'proj.cyber.title':'Anomaly Detection in Cybersecurity Logs Using LSTM Networks',
+    'proj.cyber.sub':'Deep Learning · Cybersecurity · Python',
+    'proj.cyber.body':'Designed and implemented an <strong>LSTM-based deep learning solution</strong> to detect anomalous events in real-world telecom infrastructure logs. Engineered a robust preprocessing pipeline: parsed system logs, encoded categorical features, applied temporal windowing, and normalized multivariate time series. Built and trained an <strong>unsupervised LSTM autoencoder</strong> to learn normal system behavior and flag deviations via reconstruction error.',
+    'proj.cyber.result':'High detection accuracy through precision-recall threshold optimization · Validated via ROC-AUC and F1-score',
+    'proj.cyber.tag1':'LSTM Autoencoder','proj.cyber.tag2':'Anomaly Detection','proj.cyber.tag3':'Cybersecurity','proj.cyber.tag4':'Python',
     'proj.pdf.view':'View Report ↗',
     'footer.copy':'© 2026 · Software Functional Safety & Data Science Engineer',
     'copy.btn':'Copy'
