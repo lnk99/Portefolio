@@ -34,6 +34,24 @@ document.querySelectorAll('a, button, .proj-card, .exp-card').forEach(el => {
   });
 });
 
+/* ── Mobile Hamburger Menu ── */
+const navHamburger = document.getElementById('navHamburger');
+const navOverlay = document.getElementById('navOverlay');
+if (navHamburger && navOverlay) {
+  navHamburger.addEventListener('click', () => {
+    navHamburger.classList.toggle('active');
+    navOverlay.classList.toggle('open');
+    document.body.style.overflow = navOverlay.classList.contains('open') ? 'hidden' : '';
+  });
+  navOverlay.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navHamburger.classList.remove('active');
+      navOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
 /* ── Scroll Reveal ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
